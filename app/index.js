@@ -9,7 +9,7 @@ function component () {
 
     /* 需要引入 lodash，下一行才能正常工作 */
     element.innerHTML = _.join(['Hello','webpack'], ' ');
-
+asdf
     return element;
 }
 
