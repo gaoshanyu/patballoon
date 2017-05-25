@@ -2,15 +2,15 @@
  * Created by raniys on 5/24/17.
  */
 
-import _ from 'lodash';
+import Vue from 'vue'
+import router from './vue-routes/router'
+import App from './app.vue'
 
-function component () {
-    let element = document.createElement('div');
+import "./styles/style.css"
 
-    /* 需要引入 lodash，下一行才能正常工作 */
-    element.innerHTML = _.join(['Hello','webpack'], ' ');
 
-    return element;
-}
-
-document.body.appendChild(component());
+new Vue({
+    el: '#app',
+    router: router,
+    render: h => h(App)
+});
