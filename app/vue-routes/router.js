@@ -1,6 +1,8 @@
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import About from '../components/about.vue'
+import Test from '../components/test.vue'
 
 Vue.use(VueRouter);
 
@@ -9,7 +11,12 @@ const router = new VueRouter ({
         {
             name: 'about',
             path: '/about',
-            component: require('../components/about.vue')
+            component: About
+        },
+        {
+            name: 'test',
+            path: '/test',
+            component: Test
         }
     ]
 });
