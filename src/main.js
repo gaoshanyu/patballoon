@@ -4,10 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-if (module.hot) {
-  module.hot.accept()
-}
-
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

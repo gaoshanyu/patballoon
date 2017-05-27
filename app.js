@@ -24,7 +24,7 @@ app.use(views(__dirname + '/src', {
 }))
 
 // middle wares
-app.use(favicon(__dirname + './favicon.ico'))
+app.use(favicon(__dirname + 'favicon.ico'))
 app.use(bodyparser())
 app.use(json())
 app.use(logger())
